@@ -1,0 +1,144 @@
+
+
+/* Agregando el estilo seleccionado para todo el body de todas la paginas*/
+body{
+ font-family:  "Ubuntu", sans-serif;
+}
+
+/* Css del header y barra de navegacion */
+
+header{
+    padding: 10px;
+    display: flex;
+    border-radius: 6px;
+    justify-content: space-between;
+    align-items: center;
+}
+h6{
+    color: #0c3474;
+    
+}
+.logo-navegacion{
+    display: flex;
+    align-items: center;
+    color: #0D1B2A;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+main{
+    background-color: #F3F5FC;
+    display: flex;
+}
+
+.titulos-centralizados{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.texto-usuario{
+width: 80%;
+text-transform: lowercase;
+
+}
+
+::placeholder{
+    color:#778DA9;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contenido-texto{
+    text-align: center;
+    display: inline-block;
+    width: 65%;
+    height: 65%;
+    padding: 10px 10px 10px 10px;
+    position: relative;
+}
+textarea{
+    resize: none;
+}
+
+
+.botones{
+    text-align: center;
+    margin-top: 10px;
+}
+button{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 15px;
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    background-color: rgb(3, 48, 67);
+    border: #E0E1DD;
+}
+
+button:hover{
+    background-color: white;
+    color:#0c3474;
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+.contenido-resultado{
+    vertical-align: top;
+    text-align: center;
+    background-color: white;
+    margin: 15px 15px;
+    display: inline-block;
+    border-radius: 15px;
+    height: 530px;
+    width: 25%;
+    padding: 10px 10px 10px 10px;
+}
+
+.texto-resultado{
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    width: 70%;
+}
+
+.imagen-principal{
+    width: 336;
+    height: 304;
+    position: relative;
+}
+
+
+.imagenes-footer{
+    width: 30px;
+    margin: 10px 0;
+}
+footer{
+    padding: 15px;
+    text-align: center;
+    background-color: #0D1B2A;
+    padding: 20px;
+    color: #E0E1DD;
+}
+
+
+@media (max-width: 640px){
+    header{
+        flex-direction: column;
+    }
+    nav a{
+        max-height: 20%;
+        margin: 15px 0;
+        background-color: transparent;
+        color: #0D1B2A;
+    }
+    nav a:hover{
+        background-color: transparent;
+        color: #415A77;
+    }
+}

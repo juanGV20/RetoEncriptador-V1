@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8"/>
+        <title>Reto Encriptador Alura</title>
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css"/>
+        
+        <!--Integrando tipo de fuente -->
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    </head>
+
+
+    <body>
+
+        <header>
+            <div class="logo-navegacion">
+                <h1><img id="imagen-logo" src="imagenes/Logo.png" alt="Logotipo de Alura"></h1> 
+                <h6>ONE - Oracle next education</h6>
+            </div>
+        </header>
+
+        <main>
+ 
+            <section class="contenido-texto">
+                <h1 class="titulos-centralizados">Bienvenidos al reto del Encriptador</h1> 
+                <textarea id="textoUsuario" class="texto-usuario" rows="30" placeholder="Ingrese el texto aqui..."></textarea>
+                <div class="botones">
+                    <p> ⚠ Solo letras minusculas y sin acentos</p>
+                    <button onclick="btnEncriptar()" id="btn-Encriptar">Encriptar</button>  
+                    <button onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+            </section>
+
+            <section class="contenido-resultado">
+                <div class="caja-resultado">
+                    <img id="imagen-niño" class="imagen-principal" src="imagenes/Muñeco.png" alt="Niño mirando un diamante con una lupa">
+                    <textarea id="textoResultado" class="texto-resultado" rows="10" placeholder="Ningun mensaje fue encontrado" readonly></textarea>
+                    <p class="texto-ayuda">Ingresa el texto que deseas encriptar o desencriptar.</p>
+                </div>
+                <button onclick="btncopiar()" class="boton-copiar">Copiar</button>
+
+            </section>
+
+        </main>
+
+
+
+
+
+        <footer>
+
+            <a href="https://github.com/juanGV20"><img src="imagenes/pngaaa.com-94921.png" alt="Logo de GitHub" class="imagenes-footer"></a>
+            <a href=""><img src="imagenes/logo-linkedin-icon-1536.png" alt="Logo de LinkedIn" class="imagenes-footer"></a>
+            <p>©2024 - Todos los derechos reservados.  Desarrollado por Juan Pablo Guzman</p>
+
+        </footer>
+
+        <script src="app.js"></script>
+
+    </body>
+
+    
+
+</html>
